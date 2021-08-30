@@ -2,6 +2,8 @@
 
 header('Content-Type: application/json');
 
+# Note: The Numbers Have To Start With 1
+
 $apikey = $_GET['key'];
 $fromnum = $_GET['from'];
 $message = $_GET['msg'];
