@@ -34,7 +34,7 @@ $RemainingMessagesCount = intval($RemainingMessagesCount);
 if (strpos($result, 'result=error') !== false) {
 	echo '{"Status":"0", "Key":"'.$apikey.'", "RemainingMessages":"'.$RemainingMessagesCount.'"}';
 } else {
-    echo '{"Status":"1", "Key":"'.$apikey.'", "RemainingMessages":"'.$RemainingMessagesCount.'"}';
+	echo '{"Status":"1", "Key":"'.$apikey.'", "RemainingMessages":"'.$RemainingMessagesCount.'"}';
 }
 
 ?>
