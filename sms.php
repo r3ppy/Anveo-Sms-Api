@@ -26,7 +26,7 @@ $rzlt = curl_exec($chh);
 curl_close($chh);
 $Balance = explode("<RESULT>", $rzlt);
 $Balance = explode("</RESULT>", $Balance[1]);
-$RemainingMessagesCount = $Balance[0] / 0.010;
+$RemainingMessagesCount = $Balance[0] / 0.010; # For USA Sending SMS
 $RemainingMessagesCount = intval($RemainingMessagesCount);
 
 if (strpos($result, 'result=error') !== false) {
